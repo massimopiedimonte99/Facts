@@ -1,0 +1,160 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.hide {
+	display: none !important;
+}
+
+.show-flex {
+	display: flex !important;
+}
+
+.facts,
+.facts-editor,
+.facts-results {
+	height: 100vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.facts .container {
+	background-color: #f3f3f3;
+	width: 90%;
+	margin: 0 auto;
+	padding: 10px 20px;
+ 	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;	box-sizing: border-box;
+	line-height: 30px;
+	box-shadow: 3px 1px 15px #c3c3c3;
+}
+
+.facts .votes {
+	width: 90%;
+	margin: 0 auto;
+	padding: 30px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.facts .votes .fa {
+	font-size: 50px;
+}
+
+.facts .votes .fa-thumbs-up {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	padding: 30px;
+	color: #85bf25;
+}
+
+.facts .votes .fa-thumbs-down {
+	color: #e44;
+}
+
+.facts .create-fact {
+	text-align: center;
+	display: block;
+	padding-top: 40px;
+ 	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;	box-sizing: border-box;
+	font-size: 20px;
+	color: #c3c3c3;
+}
+
+.facts-editor {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+ 	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;	box-sizing: border-box;
+}
+
+.facts-editor h1 {
+	color: #e44;
+	font-size: 30px;
+}
+
+.facts-editor .facts-editor-container {}
+
+.facts-editor .facts-editor-container form textarea {
+	display: block;
+	width: 100%;
+	height: 40vh;
+	padding: 10px;
+	box-sizing: border-box;
+	resize: none;
+}
+
+.facts-editor .facts-editor-container form input[type="submit"] {
+	padding: 20px;
+	background-color: #e44;
+	color: #fff;
+	border: none;
+	display: block;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.facts-editor .facts-editor-container form input[type="submit"]:active {
+	background-color: #572424;	
+}
+
+.facts-editor .hide-facts-editor {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-size: 40px;
+	cursor: pointer;
+	color: #c3c3c3;
+}
+
+.facts-results {
+	flex-direction: row;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+}
+
+.facts-results .downvotes,
+.facts-results .upvotes {
+	height: 100vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.facts-results .downvotes {
+	background: #e44;
+}
+
+.facts-results .upvotes {
+	background: #85bf25;
+}
+
+.facts-results .upvotes .score,
+.facts-results .downvotes .score {
+	color: #fff;
+ 	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;	box-sizing: border-box;
+	font-size: 40px;
+	font-weight: bolder;
+}
